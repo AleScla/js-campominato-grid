@@ -31,7 +31,7 @@ h1{
     margin-left:10px;
 }
 
-#play{
+#play, select{
     padding:5px;
     font-size:1.5rem;
 }
@@ -47,6 +47,8 @@ main{
     width:1200px;
     margin:auto;
     padding:20px;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 /* footer */
@@ -55,20 +57,32 @@ footer{
     height:40px;
 }
 
-.col{
+
+
+.hardest, .hard, .normal{
     display:flex;
     border:1px solid black;
     flex-wrap:wrap;
     align-items:center;
     justify-content: center;
+    height: calc((100vh - 160px) / 10); /* 100% della pagina - 120px di footer e header e -40px di padding del container */
+}
+
+.hardest{
+    width:calc(100% / 10);
+}
+
+.hard{
+    width:calc(100% / 9);
+}
+
+.normal{
+    width:calc(100% / 7);
+}
+
+.lightcoral{
+    background-color:lightcoral;
 }
 
 
-.col-10{
-    width:calc(100% / 10 - 40px);
-    height: calc(1200px / 10 - 40px);
-}
-
-.col-9{
-    width:calc(100% / 9 - 40px)
-}
+/* FRANCESCO DEVI ANDARTENE */
