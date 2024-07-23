@@ -68,7 +68,7 @@ footer{
     height: calc((100vh - 160px) / 10); /* 100% della pagina - 120px di footer e header e -40px di padding del container */
 }
 
-.hardest{
+.normal{
     width:calc(100% / 10);
 }
 
@@ -76,7 +76,7 @@ footer{
     width:calc(100% / 9);
 }
 
-.normal{
+.hardest{
     width:calc(100% / 7);
 }
 

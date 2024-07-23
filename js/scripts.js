@@ -16,7 +16,7 @@ function boxPrinter (difficolta){
     let num = 0;
     
 
-    if(difficolta == 'hardest'){
+    if(difficolta == 'normal'){
         num = 100;
         
     }
@@ -31,13 +31,14 @@ function boxPrinter (difficolta){
         console.log(num);
     }
 
-    for (let i = 0; i < num; i++){
+    for (let i = 1; i <= num; i++){
         let col = document.createElement('div');
-        col.innerHTML = (i + 1);
+        col.innerHTML = i ;
         col.classList.add(difficolta);
         container.append(col);
         col.addEventListener('click', function(){
             col.classList.toggle('lightcoral');
+            console.log(i)
         })
     }
     
